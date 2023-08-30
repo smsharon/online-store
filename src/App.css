@@ -1,0 +1,73 @@
+#hero {
+  background-color: Pale Mint Green;
+}
+#footer {
+    background-color: rgb(23, 30, 41);
+    color: rgb(193, 185, 185);
+    cursor: pointer;
+  }
+  li {
+    list-style-type: none;
+    padding-bottom: 11px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+  }
+  #copyright {
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .list {
+    text-decoration: underline;
+  }
+  .header {
+    display: flex;
+  }
+  #categories {
+    width: 20%;
+    border: 1px solid rgb(111, 107, 107);
+    border-radius: 2%;
+  }
+  #bannerImage {
+    padding-left: 6%;
+  } 
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr );
+    gap: 1%;
+  }
+  .cards {
+    height: 50vh;
+    width: auto;
+    background-color: rgb(215, 226, 215);
+    border-radius: 2%;
+    cursor: pointer;
+  }
+  .cards:hover {
+    background-color: rgb(248, 220, 173);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  }
+  .cards img {
+    width: 100%;
+    height: 62%;
+    border-radius: 2%;
+  }
+  .cards button {
+    width: 40%;
+    height: 5vh;
+    border-radius: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    Background-color: rgb(255, 167, 4);
+  }
+  .cards button:hover {
+    transform: translateY(-5px);
+  }
+  #shopping-list {
+    margin: 0 3%;
+    padding-bottom: 10%;
+  }

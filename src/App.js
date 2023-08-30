@@ -4,7 +4,11 @@ import NavBar from "./components/NavBar";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Cart from "./components/Cart";
+import Footer from "./components/Footer";
+import ProductList from "./components/ProductList";
 import './App.css';
+
+
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -26,7 +30,11 @@ function App() {
       <Route path="/signup" element= {<Signup />}/>
       <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />} />
     </Routes>
-    </div>
+    <ProductList />
+      <Footer /> 
+      </div>
+
+ 
   );
 }
 

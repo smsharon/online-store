@@ -203,3 +203,23 @@
     flex: 1;
     margin-left: 20px;
 }
+
+.button-container {
+  display: flex;
+  padding: 40px;
+  margin-top: 10px; 
+  gap: 1.5rem;
+}
+.button-container button {
+  width: 10%;
+  height: 5vh;
+  border-radius: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(255, 197, 30);
+  transition: background-color 0.3s ease;
+}
+.button-container button :hover {
+  background-color: rgb(255, 167, 4); /* Brighter color on hover */
+  transform: translateY(-5px);
+}

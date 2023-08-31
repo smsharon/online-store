@@ -4,19 +4,27 @@ import './NavBar.css';
 import { FaShoppingCart } from 'react-icons/fa';
 
 
-function NavBar({ cartItemCount }) {
+function NavBar({ setSearchTerm, setCategoryFilter  }) {
+  
+  const handleSearchInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
 
   return (
     <header className="navbar">
       <div className="logo"><Link to="/">AES STORES</Link></div>
       <nav>
         <ul className="nav-links">
-          <li className="search">
-          <div className="search-container">
-            <input type="text" placeholder="Search products..." />
-            <button className="search-button">Search</button>
-            </div>
-          </li>
+        <div className="search">
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Search products..."
+            onChange={handleSearchInputChange}
+          />
+          <button className="search-button">Search</button>
+        </div>
+      </div>
           <li className='nav-item'>
           <Link to="/cart"><FaShoppingCart size={30} /></Link>
             <li className='nav-item'>

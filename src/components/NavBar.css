@@ -71,3 +71,7 @@
     background-color: #f0f0f0;
     width: 300px;
   }
+  .search-container input:focus {
+    outline: none; 
+  }
+  

@@ -13,6 +13,8 @@ import './App.css';
 function App() {
   const [ cart, setCart ] = useState([])
   const [ cartItems, setCartItems ] = useState(cart);
+  const [searchTerm, setSearchTerm] = useState('');
+
 
   console.log(cart)
 
@@ -60,12 +62,12 @@ function App() {
   return (
     <div className="app-container">
       
-    <NavBar  />
+    <NavBar setSearchTerm={setSearchTerm}  />
     <Routes>
       <Route path="/login" element= {<Login />}/>
       <Route path="/signup" element= {<Signup />}/>
       <Route path="/cart" element={<Cart cart={cart} onDelete={onDeleteCart}/>} />
-      <Route path="/" element= {<ProductList handleClick={handleClick}/>}/>
+      <Route path="/" element= {<ProductList handleClick={handleClick} searchTerm={searchTerm} />}/>
       <Route path="/product/:productId" element={<ProductDetails />} /> 
     </Routes>
     

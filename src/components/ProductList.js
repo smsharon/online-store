@@ -64,15 +64,22 @@ const ProductList = ({handleClick}) => {
                         <img src={i.image} alt="product" />
                         <p>{i.name}</p>
                         <p>Ksh {i.price}</p>
+
                         </Link>
+
                         <button onClick={() => handleClick(i)}>Add to Cart</button>
+
+
                     </div>
                 ))}
                 </div>
             </div>
             <div>
-                <h3>Flash Sales</h3>
-                <div className="cards-container">                      
+                <h3>Flash Sales</h3>                    
+
+                <div className="cards-container">
+
+
                 {flashSales.map((j) => (
                     <div key={j.id} className="cards">
                         <Link to={`/product/${j.id}`} className="product-link">

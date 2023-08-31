@@ -182,3 +182,24 @@
     margin: 0 3%;
     padding-bottom: 10%;
   }
+  .product-link {
+    text-decoration: none;
+  }
+  .product-link p {
+    color: black;
+  }
+  .product-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.product-details-image img {
+    max-width: 100%;
+}
+
+.product-details-content {
+    flex: 1;
+    margin-left: 20px;
+}

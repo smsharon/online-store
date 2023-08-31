@@ -4,235 +4,355 @@
       "id": 1,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/25/421243/1.jpg?3486.jpg",
       "name": "Fashion Dress Floral Blue",
-      "price": "1,000"
+      "price": "1,000",
+      "description": "A beautiful blue floral dress suitable for various occasions.",
+      "specifications": "Material: Cotton blend; Sizes: S, M, L; Colors: Blue, White",
+      "brand": "Fashionable Trends"
     },
     {
       "id": 2,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/62/309873/1.jpg?4437.jpg",
       "name": "Fashion Blue Light",
-      "price": "1,117"
+      "price": "1,117",
+      "description": "Add a touch of elegance to your home with this stylish blue light.",
+      "specifications": "Material: Glass; Dimensions: 15cm x 25cm; Colors: Blue",
+      "brand": "Home Decor Creations"
     },
     {
       "id": 3,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/95/5553621/1.jpg?3847.jpg",
       "name": "Zoolab",
-      "price": "7944850630"
+      "price": "7944850630",
+      "description": "A versatile gadget that combines various functionalities.",
+      "specifications": "Functions: A, B, C; Colors: Black",
+      "brand": "Tech Innovations"
     },
     {
       "id": 4,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/25/421243/1.jpg?3486.jpg",
       "name": "Kids School bag",
-      "price": "999"
+      "price": "999",
+      "description": "A school bag that carries all kids materials.",
+      "specifications": "Material: Cotton blend; Sizes: S, M, L; Colors: Blue, White",
+      "brand": "Kids center"
     },
     {
       "id": 5,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/386025/1.jpg?8087.jpg",
       "name": "Samsung 40'' HD LED TV",
-      "price": "34,999"
+      "price": "34,999",
+      "description": "Experience stunning visuals with the Samsung 40'' HD LED TV.",
+      "specifications": "Screen Size: 40 inches; Resolution: Full HD (1080p); Smart TV: No",
+      "brand": "Samsung"
     },
     {
       "id": 6,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/13/8044131/1.jpg?1971.jpg",
       "name": "Samsung Galaxy A24",
-      "price": "31,999"
+      "price": "31,999",
+      "description": "Upgrade to the Samsung Galaxy A24 with advanced features and a sleek design.",
+      "specifications": "Display: 6.5 inches AMOLED; Processor: Octa-core; Camera: Quad-camera setup",
+      "brand": "Samsung"
     },
     {
       "id": 7,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/44/255851/1.jpg?1475.jpg",
       "name": "Garnier Pure Active",
-      "price": "907"
+      "price": "907",
+      "description": "Achieve clearer and healthier skin with Garnier's Pure Active skincare product.",
+      "specifications": "Type: Facial Cleanser; Skin Type: Acne-prone skin; Volume: 150ml",
+      "brand": "Garnier"
     },
     {
       "id": 8,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/73/842916/1.jpg?3410.jpg",
       "name": "Jesus Inside Hoodies",
-      "price": "2,450"
+      "price": "2,450",
+      "description": "Express your faith and style with the trendy 'Jesus Inside' hoodie.",
+      "specifications": "Material: Cotton blend; Sizes: S, M, L, XL; Color: Black",
+      "brand": "FaithWear"
     },
     {
       "id": 9,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/55/053623/1.jpg?4168.jpg",
       "name": "Omron M2 Blood Pressure",
-      "price": "7,250"
+      "price": "7,250",
+      "description": "Monitor your blood pressure accurately and conveniently with Omron's M2 device.",
+      "specifications": "Type: Upper arm blood pressure monitor; Memory: Stores last reading; Power: Batteries included",
+      "brand": "Omron"
     },
     {
       "id": 10,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/74/5486351/1.jpg?1931.jpg",
       "name": "Lenovo Ideapad",
-      "price": "34,999"
+      "price": "34,999",
+      "description": "Stay productive and connected with the powerful Lenovo Ideapad laptop.",
+      "specifications": "Display: 15.6 inches Full HD; Processor: Intel Core i5; RAM: 8GB; Storage: 256GB SSD",
+      "brand": "Lenovo"
     },
     {
       "id": 11,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/12/925056/1.jpg?7604.jpg",
       "name": "Cookley",
-      "price": "3030321819"
-    },
-    {
-      "id": 18,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/9008651/1.jpg?8506.jpg",
-      "name": "Promate Birger backpack",
-      "price": "3,999"
+      "price": "3030321819",
+      "description": "Enhance your culinary skills with the versatile Cookley kitchen appliance.",
+      "specifications": "Type: Multi-function cooker; Features: Multiple cooking modes; Capacity: 5L",
+      "brand": "Cookley"
     },
     {
       "id": 12,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/53/005886/1.jpg?4712.jpg",
-      "name": "Knee Support Knee Support",
-      "price": "512"
+      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/9008651/1.jpg?8506.jpg",
+      "name": "Promate Birger backpack",
+      "price": "3,999",
+      "description": "Stay organized and stylish with the Promate Birger backpack.",
+      "specifications": "Material: Durable fabric; Compartments: Multiple pockets; Capacity: 15L",
+      "brand": "Promate"
     },
     {
       "id": 13,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/13/8640351/1.jpg?1625.jpg",
-      "name": "Transcend",
-      "price": "12,200"
+      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/53/005886/1.jpg?4712.jpg",
+      "name": "Knee Support Knee Support",
+      "price": "512",
+      "description": "Provide support and comfort to your knees with this high-quality knee support.",
+      "specifications": "Size: Adjustable; Material: Neoprene; Features: Elastic straps",
+      "brand": "HealthFit"
     },
     {
       "id": 14,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/21/676789/1.jpg?6909.jpg",
-      "name": "Beard Oil Fast Beard",
-      "price": "331"
+      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/13/8640351/1.jpg?1625.jpg",
+      "name": "Transcend",
+      "price": "12,200",
+      "description": "Experience fast and reliable data storage with Transcend's external hard drive.",
+      "specifications": "Capacity: 1TB; Interface: USB 3.0; Compatibility: Windows, Mac",
+      "brand": "Transcend"
     },
     {
       "id": 15,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/28/049084/1.jpg?3185.jpg",
-      "name": "Bamity",
-      "price": "1692166778"
+      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/21/676789/1.jpg?6909.jpg",
+      "name": "Beard Oil Fast Beard",
+      "price": "331",
+      "description": "Achieve a well-groomed and healthy beard with this fast-acting beard oil.",
+      "specifications": "Volume: 30ml; Ingredients: Natural oils; Fragrance: Sandalwood",
+      "brand": "Fast Beard"
     },
     {
       "id": 16,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/36/472432/1.jpg?2868.jpg",
-      "name": "Bitwolf",
-      "price": "9378169481"
+      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/28/049084/1.jpg?3185.jpg",
+      "name": "Bamity",
+      "price": "1692166778",
+      "description": "Experience the convenience and efficiency of Bamity's innovative product.",
+      "specifications": "Type: Multi-purpose device; Features: Advanced technology; Power: 120V",
+      "brand": "Bamity"
     },
     {
       "id": 17,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/90/120643/1.jpg?3891.jpg",
-      "name": "Generic White Mosquito Net",
-      "price": "879"
+      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/36/472432/1.jpg?2868.jpg",
+      "name": "Bitwolf",
+      "price": "9378169481",
+      "description": "Enhance your digital experience with Bitwolf's cutting-edge technology.",
+      "specifications": "Compatibility: Windows, Mac; Connectivity: USB; Features: Ergonomic design",
+      "brand": "Bitwolf"
     },
     {
       "id": 18,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/378548/1.jpg?1465.jpg",
-      "name": "HDMI AV Converter",
-      "price": "1,048"
+      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/90/120643/1.jpg?3891.jpg",
+      "name": "Generic White Mosquito Net",
+      "price": "879",
+      "description": "Protect yourself from pesky mosquitoes with this durable and effective mosquito net.",
+      "specifications": "Size: Queen; Material: Polyester; Installation: Hanging hooks",
+      "brand": "Generic"
     },
     {
       "id": 19,
+      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/378548/1.jpg?1465.jpg",
+      "name": "HDMI AV Converter",
+      "price": "1,048",
+      "description": "Connect your devices seamlessly with this HDMI to AV converter.",
+      "specifications": "Input: HDMI; Output: AV; Resolution: Full HD",
+      "brand": "TechConnect"
+    },
+    {
+      "id": 20,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/81/745699/1.jpg?5540.jpg",
       "name": "Wireless RGB Mouse",
-      "price": "480"
+      "price": "480",
+      "description": "Experience wireless freedom with this RGB mouse featuring customizable lighting.",
+      "specifications": "Connectivity: Wireless; DPI: Adjustable; Features: RGB lighting",
+      "brand": "TechWave"
     }
   ],
   "todaydeals": [
     {
-      "id": 20,
+      "id": 1,
       "image": "https://res.cloudinary.com/duofzxtxh/image/upload/v1693328914/1_hr4eop.jpg",
       "name": "Von Hotpoint VALS",
-      "price": "21,999"
+      "price": "21,999",
+      "description": "Upgrade your kitchen with the powerful Von Hotpoint VALS gas cooker.",
+      "specifications": "Burners: 4; Oven Capacity: 50L; Ignition: Auto-ignition",
+      "brand": "Von Hotpoint"
     },
     {
-      "id": 21,
+      "id": 2,
       "image": "https://res.cloudinary.com/duofzxtxh/image/upload/v1693328999/1_js5bg1.jpg",
       "name": "Vision Plus VP8832DF",
-      "price": "26,995"
+      "price": "26,995",
+      "description": "Experience stunning visuals with the Vision Plus VP8832DF Full HD LED TV.",
+      "specifications": "Screen Size: 32''; Resolution: Full HD; Connectivity: HDMI, USB",
+      "brand": "Vision Plus"
     },
     {
-      "id": 22,
+      "id": 3,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/44/5171151/1.jpg?5457.jpg",
       "name": "Ramtons RW/147",
-      "price": "80,400"
+      "price": "80,400",
+      "description": "Keep your food fresh and organized with the spacious Ramtons RW/147 refrigerator.",
+      "specifications": "Capacity: 147L; Compartments: 2; Energy Efficiency: A+",
+      "brand": "Ramtons"
     },
     {
-      "id": 23,
+      "id": 4,
       "image": "https://res.cloudinary.com/duofzxtxh/image/upload/v1693329881/1_kwv1dr.jpg",
       "name": "MacBook Air M2 8GB RAM",
-      "price": "195,000"
+      "price": "195,000",
+      "description": "Unleash your creativity with the powerful MacBook Air M2 featuring 8GB RAM.",
+      "specifications": "Processor: Apple M2; RAM: 8GB; Storage: 256GB SSD",
+      "brand": "Apple"
     },
     {
-      "id": 24,
+      "id": 5,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/42/135326/1.jpg?4929.jpg",
       "name": "Nunix Free Standing",
-      "price": "19,999"
+      "price": "19,999",
+      "description": "Cook conveniently with the Nunix Free Standing gas cooker.",
+      "specifications": "Burners: 3; Oven Capacity: 45L; Ignition: Manual",
+      "brand": "Nunix"
     }
   ],
   "mostpopular": [
     {
-      "id": 25,
+      "id": 1,
       "image": "https://ke.jumia.is/cms/2023/JumiaFestival/Live/Launch/HypeDeals/Mobile/_MTB7.jpg",
       "name": "Stereo Wireless Earbuds",
-      "price": "5009418266"
+      "price": "5009",
+      "description": "Experience high-quality sound with these Stereo Wireless Earbuds.",
+      "specifications": "Bluetooth Version: 5.0; Battery Life: Up to 10 hours; Charging: USB-C",
+      "brand": "Techoff"
     },
     {
-      "id": 26,
+      "id": 2,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/875336/1.jpg?5138.jpg",
       "name": "Domainer",
-      "price": "7885912337"
+      "price": "7885",
+      "description": "Elevate your style with the sleek and stylish Domainer wristwatch.",
+      "specifications": "Movement: Quartz; Case Material: Stainless Steel; Water Resistance: 30m",
+      "brand": "Domainer"
     },
     {
-      "id": 27,
+      "id": 3,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/32/09875/1.jpg?2880.jpg",
       "name": "Ramtons RW/115",
-      "price": "32,700"
+      "price": "32,700",
+      "description": "Keep your food fresh and organized with the Ramtons RW/115 refrigerator.",
+      "specifications": "Capacity: 115L; Compartments: 1; Energy Efficiency: A",
+      "brand": "Ramtons"
     },
     {
-      "id": 28,
+      "id": 4,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/90/2656/1.jpg?3383.jpg",
       "name": "Bruhm BCG BTSG",
-      "price": "3990"
+      "price": "3990",
+      "description": "Prepare delicious meals with the versatile Bruhm BCG BTSG gas cooker.",
+      "specifications": "Burners: 2; Oven Capacity: 38L; Ignition: Auto-ignition",
+      "brand": "Bruhm"
     },
     {
-      "id": 29,
+      "id": 5,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/55/249074/1.jpg?6954.jpg",
       "name": "Matsoft",
-      "price": "5965069189"
+      "price": "5000",
+      "description": "Experience comfort and style with the Matsoft cushioned sneakers.",
+      "specifications": "Material: Fabric and Rubber; Sizes: Available from 38 to 45; Closure: Lace-up",
+      "brand": "Matsoft"
     },
     {
-      "id": 30,
+      "id": 6,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/33/505623/1.jpg?3341.jpg",
       "name": "Holdlamis",
-      "price": "2445621739"
+      "price": "24456",
+      "description": "Enhance your home decor with the elegant Holdlamis table lamp.",
+      "specifications": "Material: Metal and Fabric; Height: 45cm; Bulb Type: E27 (not included)",
+      "brand": "Holdlamis"
     },
     {
-      "id": 31,
+      "id": 7,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/786019/1.jpg?4815.jpg",
       "name": "Tin",
-      "price": "1956365214"
+      "price": "19563",
+      "description": "Keep your food fresh with the stylish and practical Tin storage containers.",
+      "specifications": "Set Includes: 3 containers of varying sizes; Material: Plastic; Lid Type: Snap-on",
+      "brand": "Tin"
     },
     {
-      "id": 32,
+      "id": 8,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/02/629623/1.jpg?6783.jpg",
       "name": "Daltfresh",
-      "price": "7978884821"
+      "price": "7978",
+      "description": "Store your groceries conveniently with the spacious Daltfresh refrigerator.",
+      "specifications": "Capacity: 400L; Shelves: Glass; Cooling System: Frost-Free",
+      "brand": "Daltfresh"
     },
     {
-      "id": 33,
+      "id": 9,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/89/600085/1.jpg?8619.jpg",
       "name": "Polo Short Sleeves",
-      "price": "1,099"
+      "price": "1,099",
+      "description": "Stay stylish and comfortable with the classic Polo Short Sleeves t-shirt.",
+      "specifications": "Material: Cotton; Available Sizes: S to XXL; Fit: Regular",
+      "brand": "Polo"
     },
     {
-      "id": 34,
+      "id": 10,
       "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/29/6690811/1.jpg?2818.jpg",
       "name": "Latlux",
-      "price": "1800268009"
+      "price": "1800",
+      "description": "Illuminate your space with the modern and sleek Latlux pendant light.",
+      "specifications": "Material: Aluminum; Diameter: 50cm; Bulb Type: LED (included)",
+      "brand": "Latlux"
     }
   ],
-  "cart": [
+  "users": [],
+  "login": [
     {
-      "id": 21,
-      "image": "https://res.cloudinary.com/duofzxtxh/image/upload/v1693328999/1_js5bg1.jpg",
-      "name": "Vision Plus VP8832DF",
-      "price": "26,995"
+      "email": "shallomokeira@gmail.com",
+      "password": "1234",
+      "id": 1
     },
     {
-      "id": 28,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/90/2656/1.jpg?3383.jpg",
-      "name": "Bruhm BCG BTSG",
-      "price": "3990"
+      "email": "shallonmokeira@gmail.com",
+      "password": "1234",
+      "id": 2
     },
     {
-      "id": 22,
-      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/44/5171151/1.jpg?5457.jpg",
-      "name": "Ramtons RW/147",
-      "price": "80,400"
+      "email": "alvin@gmail.com",
+      "password": "1234",
+      "id": 3
+    }
+  ],
+  "register": [
+    {
+      "email": "shallonmokeira@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "email": "everlyene@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "email": "alvin@gmail.com",
+      "password": "1234",
+      "id": 3
     }
   ]
 }

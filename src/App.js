@@ -6,6 +6,7 @@ import Signup from "./components/Signup";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
+import ProductDetails from "./components/ProductDetails";
 import './App.css';
 
 
@@ -21,7 +22,7 @@ function App() {
       alert('Added to cart successfully')
       // setCart([...cart, item])
 
-
+      //post cart data to server
       fetch('http://localhost:8002/cart', {
         method: "POST",
         headers: {
@@ -34,6 +35,7 @@ function App() {
       .catch((error)=> console.log("error 404",error))
     }
 
+    //fetch cart data from server
     useEffect(()=> {
       fetch('http://localhost:8002/cart')
       .then((res)=> res.json())
@@ -51,10 +53,8 @@ function App() {
     // .then((data)=> setCartItems(data.cart))
     const updatedCart = cartItems.filter(item => item.id !== productId);
     setCartItems(updatedCart);
-console.log(updatedCart);
+    console.log(updatedCart);
   };
-
-
 
 
   return (
@@ -66,6 +66,7 @@ console.log(updatedCart);
       <Route path="/signup" element= {<Signup />}/>
       <Route path="/cart" element={<Cart cart={cart} onDelete={onDeleteCart}/>} />
       <Route path="/" element= {<ProductList handleClick={handleClick}/>}/>
+      <Route path="/product/:productId" element={<ProductDetails />} /> 
     </Routes>
     
       <Footer /> 

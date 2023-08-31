@@ -2,23 +2,30 @@
 
 .navbar {
     display: flex;
+    position: -webkit-sticky;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(23, 30, 41);
     color: white;
     padding: 1rem 2rem;
+    height: 7vh;
+    position: sticky;
+    z-index: 100;
   }
   
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
+    color: white;
+    text-decoration: none;
   }
   
   .nav-links {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    gap: 5rem;
   }
 
   .nav-links a {
@@ -44,13 +51,15 @@
   .nav-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 4rem;
+    justify-content: space-between;
   }
   
   .search {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 900px;
   }
   
   .search-button {
@@ -60,14 +69,14 @@
     border: none;
     border-radius: 0 30px 30px 0;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 1px;
   }
   .search-container {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
-    border-radius: 30px; 
+    border-radius: 25px; 
+    width: 80%;
     overflow: hidden;
     background-color: #f0f0f0;
-    width: 300px;
   }

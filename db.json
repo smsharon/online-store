@@ -320,6 +320,17 @@
       "brand": "Latlux"
     }
   ],
+  "cart": [
+    {
+      "id": 1,
+      "image": "https://res.cloudinary.com/duofzxtxh/image/upload/v1693328914/1_hr4eop.jpg",
+      "name": "Von Hotpoint VALS",
+      "price": "21,999",
+      "description": "Upgrade your kitchen with the powerful Von Hotpoint VALS gas cooker.",
+      "specifications": "Burners: 4; Oven Capacity: 50L; Ignition: Auto-ignition",
+      "brand": "Von Hotpoint"
+    }
+  ],
   "users": [],
   "login": [
     {

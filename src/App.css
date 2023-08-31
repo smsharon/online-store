@@ -108,7 +108,12 @@
     background-color: #ccc;
   }
   
-
+#select {
+  height: 4vh;
+  font-size: 1.1em;
+  border-radius: 3px;
+  background-color: rgb(178, 198, 232);
+}
   
 #hero {
   background-color: Pale Mint Green;
@@ -125,7 +130,6 @@
   .footer-container {
     display: flex;
     justify-content: space-around;
-    margin: 2%;
   }
   #copyright {
     text-align: center;

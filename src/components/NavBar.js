@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css'; 
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart, FaUser } from 'react-icons/fa';
 
 
 function NavBar({ setSearchTerm, setCategoryFilter  }) {
@@ -12,27 +12,29 @@ function NavBar({ setSearchTerm, setCategoryFilter  }) {
 
   return (
     <header className="navbar">
-      <div className="logo"><Link to="/">AES STORES</Link></div>
+      <div ><Link className="logo"to="/">AES STORES</Link></div>
       <nav>
-        <ul className="nav-links">
-        <div className="search">
-        <div className="search-container">
-          <input
+        
+        <div className="nav-links">
+          <div className="search">
+            <div className="search-container">
+            <input
             type="text"
             placeholder="Search products..."
             onChange={handleSearchInputChange}
           />
-          <button className="search-button">Search</button>
+              <button className="search-button">Search</button>
+            </div>
+          </div>
+          <div className='nav-item'>
+            <Link to="/cart"><FaShoppingCart size={30} /></Link>
+              <select id="select">
+                <option>My Account</option>
+                <option>Orders</option>
+                <option>FAQs</option>
+                </select>    
+          </div>
         </div>
-      </div>
-          <li className='nav-item'>
-          <Link to="/cart"><FaShoppingCart size={30} /></Link>
-            <li className='nav-item'>
-            <Link to="/login">My Account</Link>
-          </li>
-            
-          </li>
-        </ul>
       </nav>
     </header>
   );

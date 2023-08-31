@@ -1,11 +1,25 @@
 {
   "categories": [
-    { "id": 1, "name": "Fashion & Accessories" },
-    { "id": 2, "name": "Electronics" },
-    { "id": 3, "name": "Home & Living" },
-    { "id": 4, "name": "kids & toys" },
-    { "id": 5, "name": "sports & outdooor" }
-    
+    {
+      "id": 1,
+      "name": "Fashion & Accessories"
+    },
+    {
+      "id": 2,
+      "name": "Electronics"
+    },
+    {
+      "id": 3,
+      "name": "Home & Living"
+    },
+    {
+      "id": 4,
+      "name": "kids & toys"
+    },
+    {
+      "id": 5,
+      "name": "sports & outdooor"
+    }
   ],
   "products": [
     {
@@ -363,6 +377,7 @@
       "brand": "Latlux"
     }
   ],
+  "cart": [],
   "users": [],
   "login": [
     {

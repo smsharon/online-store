@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; 
 import image from "./Images/banner1.jpg"; 
 import './ProductList.css';
 
@@ -56,9 +57,11 @@ const ProductList = () => {
                 <div className="cards-container">
                 {todayDeals.map((i) => (
                     <div key={i.id} className="cards">
+                        <Link to={`/product/${i.id}`} className="product-link">
                         <img src={i.image} alt="product" />
                         <p>{i.name}</p>
                         <p>Ksh {i.price}</p>
+                        </Link>
                         <button>Add to Cart</button>
                     </div>
                 ))}
@@ -69,9 +72,11 @@ const ProductList = () => {
                 <div className="cards-container">
                 {flashSales.map((j) => (
                     <div key={j.id} className="cards">
+                        <Link to={`/product/${j.id}`} className="product-link">
                         <img src={j.image} alt="product" />
                         <p>{j.name}</p>
                         <p>Ksh {j.price}</p>
+                        </Link>
                         <button>Add to Cart</button>
                     </div>
                 ))}
@@ -82,9 +87,11 @@ const ProductList = () => {
                 <div className="cards-container">
                 {mostPopular.map((k) => (
                     <div key={k.id} className="cards">
+                        <Link to={`/product/${k.id}`} className="product-link">
                         <img src={k.image} alt="product" />
                         <p>{k.name}</p>
                         <p>Ksh {k.price}</p>
+                        </Link>
                         <button>Add to Cart</button>
                     </div>
                 ))}

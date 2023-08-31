@@ -6,6 +6,7 @@ import Signup from "./components/Signup";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
+import ProductDetails from "./components/ProductDetails";
 import './App.css';
 
 
@@ -29,8 +30,10 @@ function App() {
       <Route path="/login" element= {<Login />}/>
       <Route path="/signup" element= {<Signup />}/>
       <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />} />
+      <Route path="/product/:productId" element={<ProductDetails />} /> 
+      <Route path="/" element={<ProductList />} />
     </Routes>
-    <ProductList />
+    
       <Footer /> 
       </div>
 

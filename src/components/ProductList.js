@@ -64,27 +64,22 @@ const ProductList = ({handleClick}) => {
                         <img src={i.image} alt="product" />
                         <p>{i.name}</p>
                         <p>Ksh {i.price}</p>
-<<<<<<< HEAD
-                        <button onClick={() => handleClick(i)}>Add to Cart</button>
-=======
+
                         </Link>
-                        <button>Add to Cart</button>
->>>>>>> 07e60a21d2e584522e87d6f74472f89306ef04f6
+
+                        <button onClick={() => handleClick(i)}>Add to Cart</button>
+
+
                     </div>
                 ))}
                 </div>
             </div>
             <div>
-                <h3>Flash Sales</h3>
+                <h3>Flash Sales</h3>                    
+
                 <div className="cards-container">
-<<<<<<< HEAD
-                {flashSales.map((j, index) => (
-                    <div key={index} className="cards">
-                        <img src={j.image} alt="product" />
-                        <p>{j.name}</p>
-                        <p>Ksh {j.price}</p>
-                        <button onClick={() => handleClick(j)}>Add to Cart</button>
-=======
+
+
                 {flashSales.map((j) => (
                     <div key={j.id} className="cards">
                         <Link to={`/product/${j.id}`} className="product-link">
@@ -92,8 +87,7 @@ const ProductList = ({handleClick}) => {
                         <p>{j.name}</p>
                         <p>Ksh {j.price}</p>
                         </Link>
-                        <button>Add to Cart</button>
->>>>>>> 07e60a21d2e584522e87d6f74472f89306ef04f6
+                        <button onClick={() => handleClick(j)}>Add to Cart</button>
                     </div>
                 ))}
                 </div>
@@ -107,12 +101,8 @@ const ProductList = ({handleClick}) => {
                         <img src={k.image} alt="product" />
                         <p>{k.name}</p>
                         <p>Ksh {k.price}</p>
-<<<<<<< HEAD
-                        <button onClick={() => handleClick(k)}>Add to Cart</button>
-=======
                         </Link>
-                        <button>Add to Cart</button>
->>>>>>> 07e60a21d2e584522e87d6f74472f89306ef04f6
+                        <button onClick={() => handleClick(k)}>Add to Cart</button>
                     </div>
                 ))}
                 </div>

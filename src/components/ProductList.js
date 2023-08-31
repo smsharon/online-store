@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import image from "./Images/banner1.jpg"; 
 import './ProductList.css';
 
-const ProductList = () => {
+
+const ProductList = ({handleClick}) => {
     const [todayDeals, setTodayDeals] = useState([]);
     const [flashSales, setFlashSales] = useState([]);
     const [mostPopular, setMostPopular] = useState([]);
+
 
     //today deals data from server
     useEffect(() => {
@@ -27,6 +29,7 @@ const ProductList = () => {
             .then((res) => res.json())
             .then((data) => setMostPopular(data));
     }, []);
+
 
     return (
         <div>
@@ -59,7 +62,7 @@ const ProductList = () => {
                         <img src={i.image} alt="product" />
                         <p>{i.name}</p>
                         <p>Ksh {i.price}</p>
-                        <button>Add to Cart</button>
+                        <button onClick={() => handleClick(i)}>Add to Cart</button>
                     </div>
                 ))}
                 </div>
@@ -67,12 +70,12 @@ const ProductList = () => {
             <div>
                 <h3>Flash Sales</h3>
                 <div className="cards-container">
-                {flashSales.map((j) => (
-                    <div key={j.id} className="cards">
+                {flashSales.map((j, index) => (
+                    <div key={index} className="cards">
                         <img src={j.image} alt="product" />
                         <p>{j.name}</p>
                         <p>Ksh {j.price}</p>
-                        <button>Add to Cart</button>
+                        <button onClick={() => handleClick(j)}>Add to Cart</button>
                     </div>
                 ))}
                 </div>
@@ -85,7 +88,7 @@ const ProductList = () => {
                         <img src={k.image} alt="product" />
                         <p>{k.name}</p>
                         <p>Ksh {k.price}</p>
-                        <button>Add to Cart</button>
+                        <button onClick={() => handleClick(k)}>Add to Cart</button>
                     </div>
                 ))}
                 </div>

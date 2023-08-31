@@ -161,7 +161,6 @@
     background-color: rgb(248, 220, 173);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
   }
   .cards img {
     width: 100%;
@@ -174,7 +173,7 @@
     border-radius: 22px;
     font-weight: bold;
     cursor: pointer;
-    Background-color: rgb(255, 167, 4);
+    background-color: rgb(255, 167, 4);
   }
   .cards button:hover {
     transform: translateY(-5px);

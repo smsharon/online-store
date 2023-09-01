@@ -44,9 +44,8 @@ function Cart({ cart, onDelete }) {
             <tr id="total">KSH {totalPrice.toFixed(2)}</tr>
           </div>
           <Link to="/checkout">
-  <button>Proceed to Checkout</button>
-</Link>
-
+            <button id="checkout">Proceed to Checkout</button>
+          </Link>
           
         </div>
   

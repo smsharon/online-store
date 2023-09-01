@@ -7,6 +7,7 @@ import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
+import Checkout from "./components/Checkout";
 import './App.css';
 
 
@@ -67,6 +68,8 @@ function App() {
       <Route path="/cart" element={<Cart cart={cart} onDelete={onDeleteCart}/>} />
       <Route path="/" element= {<ProductList handleClick={handleClick} searchTerm={searchTerm} />}/>
       <Route path="/product/:productId" element={<ProductDetails />} /> 
+      <Route path="/checkout" element={<Checkout />} />
+
     </Routes>
     
       <Footer /> 

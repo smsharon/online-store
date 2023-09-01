@@ -1,4 +1,5 @@
 import "./Cart.css";
+import { Link } from 'react-router-dom';
 
 //calculate the total price of all products inside the cart
 function Cart({ cart, onDelete }) {
@@ -42,7 +43,9 @@ function Cart({ cart, onDelete }) {
             <tr>Total Amount</tr>
             <tr id="total">KSH {totalPrice.toFixed(2)}</tr>
           </div>
-          <button id="checkout">Proceed to checkout</button>
+          <Link to="/checkout">
+            <button id="checkout">Proceed to Checkout</button>
+          </Link>
           
         </div>
   

@@ -15,7 +15,7 @@ As a user of this application you can:
 ## Installation
 
 1. Clone this repository.
-2. Navigate to the project directory: `cd ecommerce-app`.
+2. Navigate to the project directory: `cd online-store`.
 3. Install dependencies: `npm install` `npm install react-router-dom` `install react-icons`.
 4. Configure the database connection in port 8002 `json-server --watch db.json -p 8002`.
 5. Start the application: `npm start`
@@ -41,4 +41,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Conclusion
 
-Thank you for choosing our Ecommerce Application! If you encounter any problems or need assistance, please contact our support team at support@ecommerceapp.com. Happy shopping! 🛍️
+Thank you for choosing our Ecommerce Application! Happy shopping! 🛍️

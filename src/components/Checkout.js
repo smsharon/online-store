@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Checkout.css";
 
 // Step 1: Address Input
 function AddressInput({ onNext }) {
@@ -20,7 +21,9 @@ function AddressInput({ onNext }) {
   };
 
   return (
-    <div>
+    <div className='checkout-container'>
+        
+    <div className="checkout-form">
       <h2>Step 1: Enter Your Address</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -53,6 +56,7 @@ function AddressInput({ onNext }) {
         />
         <button type="submit">Next</button>
       </form>
+    </div>
     </div>
   );
 }
@@ -146,7 +150,8 @@ function Checkout() {
   };
 
   return (
-    <div>
+    <div className="checkout-container">
+        <div className={`checkout-step ${step}`}>
       {step === 'address' && <AddressInput onNext={handleStepChange} />}
       {step === 'payment' && (
         <Payment onNext={handleStepChange} addressData={addressData} />
@@ -154,6 +159,7 @@ function Checkout() {
       {step === 'confirmation' && (
         <OrderConfirmation addressData={addressData} paymentData={paymentData} />
       )}
+      </div>
     </div>
   );
 }

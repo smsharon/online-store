@@ -6,6 +6,7 @@ import Signup from "./components/Signup";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
+import Checkout from "./components/Checkout";
 import './App.css';
 
 
@@ -30,6 +31,7 @@ function App() {
       <Route path="/signup" element= {<Signup />}/>
       <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />} />
     </Routes>
+    <Checkout/>
     <ProductList />
       <Footer /> 
       </div>

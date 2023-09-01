@@ -13,6 +13,11 @@ const ProductDetails = ({handleClick}) => {
             .then((data) => setProductDetails(data));
     }, [productId]);
 
+    
+    
+
+    
+
     if (!productDetails) {
         return <p>Loading...</p>; // Show loading message while fetching data
     }

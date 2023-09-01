@@ -19,7 +19,7 @@ const ProductList = ({handleClick, searchTerm}) => {
 
     //today deals data from server
     useEffect(() => {
-        fetch('http://localhost:8002/todaydeals')
+        fetch('http://localhost:8002/products')
             .then((res) => res.json())
             .then((data) => setTodayDeals(data));
     }, []);
@@ -33,7 +33,7 @@ const ProductList = ({handleClick, searchTerm}) => {
 
     //most popular data from server
     useEffect(() => {
-        fetch('http://localhost:8002/products')
+        fetch('http://localhost:8002/todaydeals')
             .then((res) => res.json())
             .then((data) => setMostPopular(data));
     }, []);
@@ -67,7 +67,7 @@ const ProductList = ({handleClick, searchTerm}) => {
                 ))}
                 </div>
             </div>
-            <div>
+            <div className='flash'>
                 <h3>Flash Sales</h3>                    
 
                 <div className="cards-container">

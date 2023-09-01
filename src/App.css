@@ -108,7 +108,12 @@
     background-color: #ccc;
   }
   
-
+#select {
+  height: 4vh;
+  font-size: 1.1em;
+  border-radius: 3px;
+  background-color: rgb(178, 198, 232);
+}
   
 #hero {
   background-color: Pale Mint Green;
@@ -125,7 +130,6 @@
   .footer-container {
     display: flex;
     justify-content: space-around;
-    margin: 2%;
   }
   #copyright {
     text-align: center;
@@ -193,6 +197,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
+    
 }
 
 .product-details-image img {
@@ -202,4 +207,24 @@
 .product-details-content {
     flex: 1;
     margin-left: 20px;
+}
+
+.button-container {
+  display: flex;
+  padding: 40px;
+  margin-top: 10px; 
+  gap: 1.5rem;
+}
+.button-container button {
+  width: 10%;
+  height: 5vh;
+  border-radius: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(255, 197, 30);
+  transition: background-color 0.3s ease;
+}
+.button-container button :hover {
+  background-color: rgb(255, 167, 4); /* Brighter color on hover */
+  transform: translateY(-5px);
 }

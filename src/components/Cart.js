@@ -7,11 +7,11 @@ function Cart({ cart, onDelete }) {
   console.log(cart)
   
     return (
-      <div>
+      <div className="car">
         <h1>My Cart</h1>
 
         {cart.length === 0 ? (
-          <p>Cart is empty continue shopping.</p> 
+          <p >Cart is empty continue shopping.</p> 
           ): cart.map((i)=> {
           return (
             <div key={i.id}>

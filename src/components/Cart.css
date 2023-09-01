@@ -1,5 +1,8 @@
-h1 {
+.car h1 {
     text-align: center;
+}
+.car p {
+  text-align: center;
 }
 table {
     width: 80%;

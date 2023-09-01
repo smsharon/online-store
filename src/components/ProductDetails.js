@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'; // Import useParams to get the product ID from the URL
 
-const ProductDetails = () => {
+const ProductDetails = ({handleClick}) => {
     const { productId } = useParams(); // Get the product ID from the URL parameter
     const [productDetails, setProductDetails] = useState(null);
 
@@ -38,8 +38,13 @@ const ProductDetails = () => {
                     ))}
                 </ul>
              </div>
+              <div className="button-container">
+               <button onClick={handleClick}>Add to Cart</button>
+               <button>Buy Now</button>
+              </div>
+
             </div>
-            <button>Add to Cart</button>
+            
         </div>
     );
 }

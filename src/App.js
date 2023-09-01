@@ -12,15 +12,17 @@ import './App.css';
 
 function App() {
   const [ cart, setCart ] = useState([])
-  const [ cartItems, setCartItems ] = useState(cart);
+  
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const [ cartItems, setCartItems ] = useState([]);
 
   console.log(cart)
 
      //add to cart click event
      const handleClick = (item) => {
       console.log(item)
-      alert('Added to cart successfully')
-      // setCart([...cart, item])
+      console.log(cart)
 
       //post cart data to server
       fetch('http://localhost:8002/cart', {
@@ -32,7 +34,6 @@ function App() {
       })
       .then((res)=> res.json())
       .then((data)=> console.log(data))
-      .catch((error)=> console.log("error 404",error))
     }
 
     //fetch cart data from server
@@ -44,28 +45,27 @@ function App() {
 
   console.log(cart)
 
-    // Remove the product with the given ID from the cartItems state
+    // Remove the product with the ID from the cartItems state
   const onDeleteCart = (productId) => {
     fetch(`http://localhost:8002/cart/${productId}`, {
       method: 'DELETE',
     })
-    // .then((res)=> res.json())
-    // .then((data)=> setCartItems(data.cart))
-    const updatedCart = cartItems.filter(item => item.id !== productId);
-    setCartItems(updatedCart);
-    console.log(updatedCart);
+      const updatedCart = cart.filter((item) => item.id !== productId);
+      setCart(updatedCart);
+      console.log(updatedCart);
+  
   };
 
 
   return (
     <div className="app-container">
       
-    <NavBar  />
+    <NavBar setSearchTerm={setSearchTerm}  />
     <Routes>
       <Route path="/login" element= {<Login />}/>
       <Route path="/signup" element= {<Signup />}/>
       <Route path="/cart" element={<Cart cart={cart} onDelete={onDeleteCart}/>} />
-      <Route path="/" element= {<ProductList handleClick={handleClick}/>}/>
+      <Route path="/" element= {<ProductList handleClick={handleClick} searchTerm={searchTerm} />}/>
       <Route path="/product/:productId" element={<ProductDetails />} /> 
     </Routes>
     

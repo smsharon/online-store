@@ -4,10 +4,17 @@ import image from "./Images/banner1.jpg";
 import './ProductList.css';
 
 
-const ProductList = ({handleClick}) => {
+const ProductList = ({handleClick, searchTerm}) => {
     const [todayDeals, setTodayDeals] = useState([]);
     const [flashSales, setFlashSales] = useState([]);
     const [mostPopular, setMostPopular] = useState([]);
+    
+    const filterProducts = (products) => {
+        return products.filter((product) =>
+          product.name.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+      };
+    
 
 
     //today deals data from server
@@ -35,21 +42,7 @@ const ProductList = ({handleClick}) => {
     return (
         <div>
             <div className="header">
-            <div id="categories">
-                <ul>
-                    <h3>CATEGORIES</h3>
-                    <li>Phones & Tablets</li>
-                    <li>Fashion & Accessories</li>
-                    <li>Health & Beauty</li>
-                    <li>Bags & Shoes</li>
-                    <li>Home & Office</li>
-                    <li>Furniture</li>
-                    <li>Gifts and Toys</li>
-                    <li>Sports and Outdoors</li>
-                    <li>Baby Products</li>
-                    <li>Pet Supplies</li>
-                </ul>
-            </div>
+            
             <div id="bannerImage">
                 <img src={image} alt="banner" />
             </div>
@@ -58,7 +51,7 @@ const ProductList = ({handleClick}) => {
             <div>
                 <h3>Today's Deals</h3>
                 <div className="cards-container">
-                {todayDeals.map((i) => (
+                {filterProducts(todayDeals).map((i) => (
                     <div key={i.id} className="cards">
                         <Link to={`/product/${i.id}`} className="product-link">
                         <img src={i.image} alt="product" />
@@ -80,7 +73,7 @@ const ProductList = ({handleClick}) => {
                 <div className="cards-container">
 
 
-                {flashSales.map((j) => (
+                {filterProducts(flashSales).map((j) => (
                     <div key={j.id} className="cards">
                         <Link to={`/product/${j.id}`} className="product-link">
                         <img src={j.image} alt="product" />
@@ -95,7 +88,7 @@ const ProductList = ({handleClick}) => {
             <div>
                 <h3>Most Popular</h3>
                 <div className="cards-container">
-                {mostPopular.map((k) => (
+                {filterProducts(mostPopular).map((k) => (
                     <div key={k.id} className="cards">
                         <Link to={`/product/${k.id}`} className="product-link">
                         <img src={k.image} alt="product" />
@@ -105,6 +98,9 @@ const ProductList = ({handleClick}) => {
                         <button onClick={() => handleClick(k)}>Add to Cart</button>
                     </div>
                 ))}
+                {searchTerm && filterProducts.length === 0 && (
+              <p>No products found.</p>
+            )}
                 </div>
             </div>
         </div>

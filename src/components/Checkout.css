@@ -81,6 +81,74 @@
   .confirmation-details {
     margin-top: 20px;
   }
+
+  /* Add these styles to your Checkout.css or a separate CSS file */
+.checkout-step.payment {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.checkout-step.payment h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.checkout-step.payment label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.checkout-step.payment input[type="radio"] {
+  margin-right: 5px;
+}
+
+.checkout-step.payment form {
+  margin-top: 20px;
+}
+
+.checkout-step.payment div {
+  margin-bottom: 20px;
+}
+
+.checkout-step.payment div label,
+.checkout-step.payment div input {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.checkout-step.payment button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-step.payment button:hover {
+  background-color: #0056b3;
+}
+
+.payment-label {
+  display: inline-block;
+  margin-right: 20px; /* Adjust the spacing between labels */
+  font-weight: bold;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between; /* Arrange items with space between them */
+}
+
+/* Style for payment method labels */
+.payment-label {
+  display: flex;
+  align-items: center; /* Vertically align text with the radio input */
+}
   
 
   

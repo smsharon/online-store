@@ -164,7 +164,7 @@ function OrderConfirmation({ addressData, paymentData }) {
         )}
       </div>
       </div>
-      <button>Place Order</button>
+      
     </div>
   );
 }
@@ -173,6 +173,7 @@ function Checkout() {
   const [step, setStep] = useState('address');
   const [addressData, setAddressData] = useState(null);
   const [paymentData, setPaymentData] = useState(null);
+  const [orderPlaced, setOrderPlaced] = useState(false);
 
   const handleStepChange = (nextStep, data) => {
     setStep(nextStep);
@@ -184,6 +185,11 @@ function Checkout() {
       }
     }
   };
+  const handlePlaceOrder = () => {
+    
+    setOrderPlaced(true);
+  };
+
 
   return (
     <div className="checkout-container">
@@ -197,6 +203,12 @@ function Checkout() {
       
      
    )}
+   {step === 'confirmation' && !orderPlaced && (
+          <button onClick={handlePlaceOrder}>Place Order</button>
+        )}
+        {orderPlaced && (
+          <p className="success-message">Order Placed Successfully!</p>
+        )}
       </div>
     </div>
   );

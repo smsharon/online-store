@@ -137,21 +137,32 @@ function Payment({ onNext, addressData }) {
 
 // Step 3: Order Confirmation
 function OrderConfirmation({ addressData, paymentData }) {
+  const { paymentMethod, paymentDetails } = paymentData;
   return (
-    <div>
-      <h2>Step 3: Order Confirmation</h2>
-      <div>
-        <p>Delivery Address:</p>
+    <div className="order-confirmation">
+      <h2 className="confirmation-title">Step 3: Order Confirmation</h2>
+      <div className="confirmation-section">
+      <div className="address-details">
+        <p style={{fontSize: '24px'}}>Delivery Address:</p>
         <p>{addressData.name}</p>
         <p>{addressData.address}</p>
         <p>{addressData.city}</p>
         <p>{addressData.postalCode}</p>
       </div>
-      <div>
-        <p>Payment Details:</p>
-        <p>{paymentData.cardNumber}</p>
-        <p>{paymentData.expiryDate}</p>
-        <p>{paymentData.cvv}</p>
+      <div className="payment-details">
+        <p style={{fontSize: '24px'}}>Payment Details:</p>
+        {paymentMethod === 'mpesa' && (
+          
+            <p>M-Pesa Number: {paymentDetails}</p>
+          
+        )}
+        {paymentMethod === 'mastercard' && (
+          
+            <p>Card Number: {paymentDetails}</p>
+            
+          
+        )}
+      </div>
       </div>
       <button>Place Order</button>
     </div>
@@ -182,11 +193,12 @@ function Checkout() {
         <Payment onNext={handleStepChange} addressData={addressData} />
       )}
       {step === 'confirmation' && (
-        <OrderConfirmation addressData={addressData} paymentData={paymentData} />
-      )}
+       <OrderConfirmation addressData={addressData} paymentData={paymentData} />
+      
+     
+   )}
       </div>
     </div>
   );
 }
-
 export default Checkout;

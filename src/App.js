@@ -9,6 +9,7 @@ import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import Checkout from "./components/Checkout";
 import './App.css';
+import Footer from './components/Footer';
 
 
 function App() {

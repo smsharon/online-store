@@ -32,6 +32,7 @@ function AddressInput({ onNext }) {
           placeholder="Full Name"
           value={formData.name}
           onChange={handleChange}
+          required
         />
         <input
           type="text"
@@ -39,6 +40,7 @@ function AddressInput({ onNext }) {
           placeholder="Address"
           value={formData.address}
           onChange={handleChange}
+          required
         />
         <input
           type="text"
@@ -46,6 +48,7 @@ function AddressInput({ onNext }) {
           placeholder="City"
           value={formData.city}
           onChange={handleChange}
+          required
         />
         <input
           type="text"
@@ -53,6 +56,7 @@ function AddressInput({ onNext }) {
           placeholder="Postal Code"
           value={formData.postalCode}
           onChange={handleChange}
+          required
         />
         <button type="submit">Next</button>
       </form>
@@ -63,47 +67,68 @@ function AddressInput({ onNext }) {
 
 // Step 2: Payment
 function Payment({ onNext, addressData }) {
-  const [paymentData, setPaymentData] = useState({
-    cardNumber: '',
-    expiryDate: '',
-    cvv: '',
-  });
+  const [paymentMethod, setPaymentMethod] = useState('mpesa');
+  const [paymentDetails, setPaymentDetails] = useState('');
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setPaymentData({ ...paymentData, [name]: value });
+  const handlePaymentMethodChange = (method) => {
+    setPaymentMethod(method);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onNext('confirmation', { ...addressData, paymentData }); // Proceed to the Confirmation step
+    onNext('confirmation', { ...addressData, paymentMethod, paymentDetails });
   };
 
   return (
-    <div>
-      <h2>Step 2: Enter Payment Details</h2>
+    <div className="checkout-step payment">
+      <h2>Step 2: Select Payment Method</h2>
+      <div className="payment-method">
+        <label className="payment-label">
+          <input
+            type="radio"
+            name="paymentMethod"
+            value="mpesa"
+            checked={paymentMethod === 'mpesa'}
+            onChange={() => handlePaymentMethodChange('mpesa')}
+          />
+          M-Pesa
+        </label>
+        <label className="payment-label">
+          <input
+            type="radio"
+            name="paymentMethod"
+            value="mastercard"
+            checked={paymentMethod === 'mastercard'}
+            onChange={() => handlePaymentMethodChange('mastercard')}
+          />
+          Mastercard
+        </label>
+      </div>
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="cardNumber"
-          placeholder="Card Number"
-          value={paymentData.cardNumber}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="expiryDate"
-          placeholder="Expiry Date"
-          value={paymentData.expiryDate}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="cvv"
-          placeholder="CVV"
-          value={paymentData.cvv}
-          onChange={handleChange}
-        />
+        {paymentMethod === "mpesa" && (
+          <div className="payment-details"> 
+            <label htmlFor="mpesaNumber">M-Pesa Number:</label>
+            <input
+              type="text"
+              id="mpesaNumber"
+              value={paymentDetails}
+              onChange={(e) => setPaymentDetails(e.target.value)}
+              required
+            />
+          </div>
+        )}
+        {paymentMethod === "mastercard" && (
+          <div className="payment-details">
+            <label htmlFor="cardNumber">Card Number:</label>
+            <input
+              type="text"
+              id="cardNumber"
+              value={paymentDetails}
+              onChange={(e) => setPaymentDetails(e.target.value)}
+              required
+            />
+          </div>
+        )}
         <button type="submit">Next</button>
       </form>
     </div>
@@ -112,23 +137,34 @@ function Payment({ onNext, addressData }) {
 
 // Step 3: Order Confirmation
 function OrderConfirmation({ addressData, paymentData }) {
+  const { paymentMethod, paymentDetails } = paymentData;
   return (
-    <div>
-      <h2>Step 3: Order Confirmation</h2>
-      <div>
-        <p>Delivery Address:</p>
+    <div className="order-confirmation">
+      <h2 className="confirmation-title">Step 3: Order Confirmation</h2>
+      <div className="confirmation-section">
+      <div className="address-details">
+        <p style={{fontSize: '24px'}}>Delivery Address:</p>
         <p>{addressData.name}</p>
         <p>{addressData.address}</p>
         <p>{addressData.city}</p>
         <p>{addressData.postalCode}</p>
       </div>
-      <div>
-        <p>Payment Details:</p>
-        <p>{paymentData.cardNumber}</p>
-        <p>{paymentData.expiryDate}</p>
-        <p>{paymentData.cvv}</p>
+      <div className="payment-details">
+        <p style={{fontSize: '24px'}}>Payment Details:</p>
+        {paymentMethod === 'mpesa' && (
+          
+            <p>M-Pesa Number: {paymentDetails}</p>
+          
+        )}
+        {paymentMethod === 'mastercard' && (
+          
+            <p>Card Number: {paymentDetails}</p>
+            
+          
+        )}
       </div>
-      <button>Place Order</button>
+      </div>
+      
     </div>
   );
 }
@@ -137,6 +173,7 @@ function Checkout() {
   const [step, setStep] = useState('address');
   const [addressData, setAddressData] = useState(null);
   const [paymentData, setPaymentData] = useState(null);
+  const [orderPlaced, setOrderPlaced] = useState(false);
 
   const handleStepChange = (nextStep, data) => {
     setStep(nextStep);
@@ -148,6 +185,11 @@ function Checkout() {
       }
     }
   };
+  const handlePlaceOrder = () => {
+    
+    setOrderPlaced(true);
+  };
+
 
   return (
     <div className="checkout-container">
@@ -157,11 +199,18 @@ function Checkout() {
         <Payment onNext={handleStepChange} addressData={addressData} />
       )}
       {step === 'confirmation' && (
-        <OrderConfirmation addressData={addressData} paymentData={paymentData} />
-      )}
+       <OrderConfirmation addressData={addressData} paymentData={paymentData} />
+      
+     
+   )}
+   {step === 'confirmation' && !orderPlaced && (
+          <button onClick={handlePlaceOrder}>Place Order</button>
+        )}
+        {orderPlaced && (
+          <p className="success-message">Order Placed Successfully!</p>
+        )}
       </div>
     </div>
   );
 }
-
 export default Checkout;

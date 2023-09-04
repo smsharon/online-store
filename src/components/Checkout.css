@@ -81,6 +81,164 @@
   .confirmation-details {
     margin-top: 20px;
   }
+
   
+.checkout-step.payment {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.checkout-step.payment h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.checkout-step.payment label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.checkout-step.payment input[type="radio"] {
+  margin-right: 5px;
+}
+
+.checkout-step.payment form {
+  margin-top: 20px;
+}
+
+.checkout-step.payment div {
+  margin-bottom: 20px;
+}
+
+.checkout-step.payment div label,
+.checkout-step.payment div input {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.checkout-step.payment button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-step.payment button:hover {
+  background-color: #0056b3;
+}
+
+.payment-label {
+  display: inline-block;
+  margin-right: 20px; /* Adjust the spacing between labels */
+  font-weight: bold;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between; /* Arrange items with space between them */
+}
+
+/* Style for payment method labels */
+.payment-label {
+  display: flex;
+  align-items: center; /* Vertically align text with the radio input */
+}
+/* Checkout.css */
+
+/* Add styling for Step 3 - Order Confirmation */
+.checkout-step.confirmation {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.checkout-step.confirmation h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checkout-step.confirmation p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Style the delivery address section */
+.checkout-step.confirmation .delivery-address {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style the payment details section */
+.checkout-step.confirmation .payment-details {
+  padding-top: 20px;
+}
+
+/* Style the Place Order button */
+.checkout-step.confirmation button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.checkout-step.confirmation button:hover {
+  background-color: #0056b3;
+}
+
+  /* Checkout.css */
+.order-confirmation {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+.confirmation-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.confirmation-section {
+  display: block;
+  justify-content: space-between;
+}
+
+.address-details,
+.payment-details {
+  flex: 1;
+}
+
+.address-details h3,
+.payment-details h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.place-order-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.place-order-button:hover {
+  background-color: #0056b3;
+}
+
 
   

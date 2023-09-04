@@ -2,12 +2,14 @@
 
 .navbar {
     display: flex;
-    position: -webkit-sticky;
+    position: sticky; 
+    z-index: 100;
+    top: 0; 
     justify-content: space-between;
     align-items: center;
     background-color: rgb(23, 30, 41);
     color: white;
-    padding: 1rem 2rem;
+    padding: 30px 5px ;
    /* height: 7vh;
     position: sticky;
     z-index: 100*/
@@ -19,10 +21,10 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    text-decoration: none;
+   /* text-decoration: none;
     flex: 1; 
     display: flex; 
-    align-items: center; 
+    align-items: center; */
   }
   
   .nav-links {
@@ -30,7 +32,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
+    
   }
 
   .nav-links a {
@@ -68,7 +71,7 @@
   }
   
   .search-button {
-    padding: 8px 12px;
+    padding: 8px 50px;
     background-color: #ff9900;
     color: white;
     border: none;

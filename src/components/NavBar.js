@@ -22,7 +22,7 @@ function NavBar({ setSearchTerm, setCategoryFilter }) {
 
   return (
     <header className="navbar">
-      <div className="logo"><Link to="/">AES STORES</Link></div>
+      <div className="logo" ><Link style={{color: 'white', textDecoration: "none", fontSize: '24px'}} to="/">AES STORES</Link></div>
       <nav>
         <ul className="nav-links">
           <div className="search">

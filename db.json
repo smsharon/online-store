@@ -377,7 +377,18 @@
       "brand": "Latlux"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/25/421243/1.jpg?3486.jpg",
+      "name": "Fashion Dress Floral Blue",
+      "price": "1,000",
+      "description": "A beautiful blue floral dress suitable for various occasions.",
+      "specifications": "Material: Cotton blend; Sizes: S, M, L; Colors: Blue, White",
+      "brand": "Fashionable Trends"
+    }
+  ],
   "users": [],
   "login": [
     {

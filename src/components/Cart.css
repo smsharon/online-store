@@ -28,7 +28,7 @@ table {
   }
   #checkout {
     height: 7vh;
-    width: 30%;
+    width: 100%;
     Background-color: rgb(255, 167, 4);
     cursor: pointer;
     border-radius: 13px;

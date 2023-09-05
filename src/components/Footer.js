@@ -34,7 +34,7 @@ const Footer = () => {
                 <li>Meta</li>
             </ul>
         </div>
-        <p id="copyright"><FaCopyright icon="copyright"/>Copyright 2023 | All rights reserved </p>
+        <p id="copyright"><FaCopyright icon="copyright"/>Copyright 2023 | All rights reserved. </p>
     </div>
   )
 }
